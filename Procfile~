@@ -1,1 +1,1 @@
-web: python hello.py -b 0.0.0.0:$PORT
+web: python hello.py --bind=0.0.0.0:$PORT

@@ -1,1 +1,1 @@
-web: python hello.py --port=$PORT
+web: python eulogy.py --port=$PORT

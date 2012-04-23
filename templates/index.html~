@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang-"en">
+	<head>
+		<title>Eulogy</title>
+	</head>
+	<body>
+		<h1>Eulogy</h1>
+		<img src="{{static_url('eulogy.jpg') }}">
+		<p>A eulogy for...<p/>
+		<form method="post" action="/eulogy">
+			<input type="text" name="word">
+			<input type="submit" value="make a eulogy!">
+		</form>
+	</body>
+</html>
+

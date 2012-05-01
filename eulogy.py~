@@ -205,8 +205,22 @@ class EulogyHandler(tornado.web.RequestHandler):
 		mother = output_line[random.randrange(1,sizeOfOutput)]
 		date = output_line[random.randrange(1,sizeOfOutput)]
 		year = output_line[random.randrange(1,sizeOfOutput)]
+		school = output_line[random.randrange(1,sizeOfOutput)]
+		degree = output_line[random.randrange(1,sizeOfOutput)]
+		company = output_line[random.randrange(1,sizeOfOutput)]
+		job = output_line[random.randrange(1,sizeOfOutput)]
+		marrage_year = output_line[random.randrange(1,sizeOfOutput)]
+		spouse = output_line[random.randrange(1,sizeOfOutput)]
+		marrage_years = output_line[random.randrange(1,sizeOfOutput)]
+		community = output_line[random.randrange(1,sizeOfOutput)]
+		hobby = output_line[random.randrange(1,sizeOfOutput)]
+		quality = output_line[random.randrange(1,sizeOfOutput)]
+		character1 = output_line[random.randrange(1,sizeOfOutput)]
+		character2 = output_line[random.randrange(1,sizeOfOutput)]
+		character3 = output_line[random.randrange(1,sizeOfOutput)]
+		value = output_line[random.randrange(1,sizeOfOutput)]
 
-		words = city+ " " + mother + " " + father
+		words = city + " " + mother + " " + father
 
 		self.render(
 				'eulogy.html', 
@@ -217,7 +231,24 @@ class EulogyHandler(tornado.web.RequestHandler):
 				father = father,
 				mother = mother,
 				date = date,
-				year = year)
+				year = year,
+				school = school,
+				degree = degree,
+				company = company,
+				job = job,
+				marrage_year = marrage_year,
+				spouse = spouse,
+				marrage_years = marrage_years,
+				community = community,
+				hobby = hobby,
+				quality = quality,
+				character1 = character1,
+				character2 = character2,
+				character3 = character3,
+				value = value
+
+
+				)
 
 if __name__ == "__main__":
 	tornado.options.parse_command_line()

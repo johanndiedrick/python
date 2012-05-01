@@ -90,22 +90,6 @@
 		<br>
 		{{word[0].upper() + word[1:]}},  thank you for being part of our lives. We are all going to miss you.	
 	
-		<p>{{ 
-	       
-	
-	output
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		}}</p>
 	</div>
 	</body>
 </html>

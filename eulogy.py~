@@ -10,7 +10,7 @@ import urllib2
 import simplejson
 import re
 import requests
-import BeautifulSoup
+from bs4 import BeautifulSoup
 from random import choice
 
 

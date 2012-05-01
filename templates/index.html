@@ -2,15 +2,23 @@
 <html lang-"en">
 	<head>
 		<title>Eulogy</title>
+		<LINK href="{{static_url('style.css') }}" rel="stylesheet" type="text/css">
 	</head>
 	<body>
-		<h1>Eulogy</h1>
+		<div id="main_content">
+		<div id="title">
+			<h1>Eulogy</h1>
+		</div>
 		<img src="{{static_url('eulogy.jpg') }}">
 		<p>A eulogy for...<p/>
+		
 		<form method="post" action="/eulogy">
 			<input type="text" name="word">
+			<br>
+			<br>
 			<input type="submit" value="make a eulogy!">
 		</form>
+		</div>
 	</body>
 </html>
 

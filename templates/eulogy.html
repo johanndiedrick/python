@@ -1,11 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>A Eulogy for {{ word }} </title>
+		<LINK href="{{static_url('style.css') }}" rel="stylesheet" type="text/css">
+		<title>A Eulogy for {{ word[0].upper() + word[1:] }} </title>
 	</head>
 	<body>
-		<h1>A Eulogy for {{ word }} </h1>
-		<p>{{word}}<p>
-		<p>{{ definitions }}</p>
+		<div id="main_content">
+			<div id="title">
+				<h1>A Eulogy for {{ word[0].upper() + word[1:] }} </h1>
+			</div>
+		<p>
+		A famous writer once said “We make a living by what we get, we make a life by what we give”.
+		<br>		
+		If that is true, then {{word}} made a great life.
+	      	<br>
+		They were the most giving person I’ve ever known.
+	 	<br>      	
+		And judging from the nodding heads I see in front of me, it seems that many of you agree.
+		</p>
+
+
+		<p>
+		{{ word[0].upper()+word[1:]}}  was born on {{date}} in {{city}}. 
+		<br>
+		They were the child of {{father}} and {{mother}}. They lived in {{city}} from {{year}} to {{year}}, and later moved to {{city}} and {{city}}.
+		</p>
+
+		<p>
+		{{ word[0].upper()+word[1:]}} went to {{school}} and graduated with {{degree}}.
+	       	<br>
+		They then went to work for {{company}} as a {{job}}.
+		<br>
+		</p>
+
+		<p>
+		In {{marrage_year}} met {{spouse}} and they were married {{marrage_years}}.
+		<br>
+		Eventually they had one child.
+		<br>
+		Last year, {{word}} and {{spouse}}  celebrated their 50th anniversary.
+		</p>
+		
+		<p>
+		{{ word[0].upper() + word[1:] }}  was very active in the {{community}} community.
+		<br>
+		{{word[0].upper() + word[1:]}} devoted many hours to {{hobby}} and was known for {{quality}}.
+		</p>
+
+		<p>
+		{{ word[0].upper() + word[1:] }} was a remarkably {{character1}}  person. They were a person of great {{character2}} and {{character3}}.
+		<br>
+		Above all, {{word}} believed in {{value}}.  They always said “{{randomWords}}”.
+		<br>
+		Those are words of wisdom that I will always cherish.
+		<br>
+		<br>
+		In closing, I would like to share this poem with you:
+		<br>
+		<br>
+		<i>
+		Do not stand at my grave and weep,
+		<br>
+		I am not there, I do not sleep.
+		<br>
+		<br>
+		I am a thousand winds that blow.
+		<br>
+		I am the diamond glint on snow.
+		<br>
+		I am the sunlight on ripened grain.
+		<br>
+		I am the gentle autumn rain.
+		<br>
+		<br>
+		When you wake in the morning hush,
+		<br>
+		I am the swift, uplifting rush
+		<br>
+		Of quiet birds in circling flight.
+		<br>
+		I am the soft starlight at night.
+		<br>
+		<br>
+		Do not stand at my grave and weep.
+		<br>
+		I am not there, I do not sleep.
+		</i>
+		<br>
+		<br>
+		{{word[0].upper() + word[1:]}},  thank you for being part of our lives. We are all going to miss you.	
+	
+	</div>
 	</body>
 </html>

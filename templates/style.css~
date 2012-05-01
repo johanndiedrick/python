@@ -1,0 +1,8 @@
+.body{
+	width: 800px;
+	height: 600px;
+}
+
+.title{
+	text-align: center;
+}

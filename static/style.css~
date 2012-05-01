@@ -1,0 +1,23 @@
+body{
+	width: 100%;
+	height: 100%;
+}
+
+
+#main_content{
+	margin: 0 auto;
+	text-align: center;
+}
+
+h1{
+	color: #000000;
+	font-family: Arial;
+}
+
+p{
+	font-family: Arial;
+}
+
+img{
+	border: 1px solid #000000;
+}
